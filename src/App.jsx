@@ -1,9 +1,12 @@
 import React from 'react'
 import Home from './pages/Home';
 import Contact from './pages/Contact';
-import Course from './pages/Course'
+import About from './pages/About';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NotFound from'./pages/์Notfound';
+import New from './pages/New';
+import Manga from './pages/Manga';
+import LightNovel from './pages/LightNovel';
 
 const App = () => {
   return (
@@ -15,8 +18,15 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/course" element={<Course />} />
+            <Route path="/about" element={<About />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/news" element={<New />} />
+            <Route path="/lightnovel" element={<LightNovel />} />
+            <Route path="/manga" element={<Manga />} />
+
+
+
+
           </Routes>
         </div>
       </div>
